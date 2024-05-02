@@ -49,7 +49,7 @@ gem 'rubocop'
 
 gem "panko_serializer"
 
-gem 'geo_location_importer', path: '~/Desktop/geo_location_importer'
+gem 'geo_location_importer', git: 'https://github.com/ayzahamid/geo-location-importer', branch: 'main'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

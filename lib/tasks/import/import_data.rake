@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'geo_location_importer'
 
 namespace :import do
@@ -11,9 +12,7 @@ namespace :import do
       next
     end
 
-    Benchmark.measure do
-      GeoLocationImporter::ImportCsv.call(file_path)
-    end
+    GeoLocationImporter::ImportCsv.call(file_path)
 
     puts 'Import process completed.'
   end

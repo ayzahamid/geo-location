@@ -1,5 +1,7 @@
-PATH
-  remote: ../../geo_location_importer
+GIT
+  remote: https://github.com/ayzahamid/geo-location-importer
+  revision: e47f0419aa3b051c84015ceecddca55b1bd603d3
+  branch: main
   specs:
     geo_location_importer (1.0.0)
       activerecord-import (~> 1.6)
@@ -152,7 +154,7 @@ GEM
       railties (>= 6.0.0)
     io-console (0.7.2)
     ipaddress (0.8.3)
-    irb (1.13.0)
+    irb (1.13.1)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jaro_winkler (1.5.6)
@@ -261,7 +263,7 @@ GEM
     redis-client (0.22.1)
       connection_pool
     regexp_parser (2.9.0)
-    reline (0.5.4)
+    reline (0.5.5)
       io-console (~> 0.5)
     reverse_markdown (2.1.1)
       nokogiri
