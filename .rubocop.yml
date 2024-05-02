@@ -1,0 +1,10 @@
+AllCops:
+  NewCops: enable
+  Exclude:
+  - db/schema.rb
+  - db/migrate/**/*
+  - db/seeds/**/*
+  - bin/*
+
+Style/Documentation:
+  Enabled: false
