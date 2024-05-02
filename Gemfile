@@ -47,6 +47,8 @@ gem "rectify"
 
 gem 'rubocop'
 
+gem "panko_serializer"
+
 gem 'geo_location_importer', path: '~/Desktop/geo_location_importer'
 
 group :development, :test do
