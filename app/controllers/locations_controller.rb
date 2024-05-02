@@ -6,7 +6,7 @@ class LocationsController < ApplicationController
     if location
       render json: LocationSerializer.new.serialize(location)
     else
-      render json: 'Record Not Found'
+      render json: 'Record Not Found', status: 404
     end
   end
 end
