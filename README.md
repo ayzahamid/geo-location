@@ -21,3 +21,23 @@
   ```
     make be-test
   ```
+
+  * Api Endpoint
+
+```
+   curl -X GET "localhost:3000/find_location?ip_address="<ip_address>""
+```
+example:
+```
+   curl -X GET "localhost:3000/find_location?ip_address="200.106.141.12""
+```
+
+> Note:
+> Custom database configuration can be provided in the application in database.yml
+
+   * Rake Task
+
+Added a rake task for importing CSV data you can run the task by using
+```
+    rake import:geolocation
+```
