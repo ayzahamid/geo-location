@@ -24,7 +24,7 @@ RSpec.describe LocationsController, type: :request do
       it 'returns a not found response' do
         get '/find_location', params: { ip_address: invalid_ip_address }
         expect(response).to have_http_status(:not_found)
-        expect(response.body).to eq('Record Not Found')
+        expect(JSON.parse(response.body)['error']).to eq('Record Not Found')
       end
     end
   end
